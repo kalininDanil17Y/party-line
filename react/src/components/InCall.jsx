@@ -94,7 +94,7 @@ const InCall = () => {
     <>
     <Container hidden={view !== INCALL}>
       <CallHeader>
-        <Header>Speakers</Header>
+        <Header>Говорящие</Header>
         <Counter />
       </CallHeader>
       {canSpeak}
@@ -110,21 +110,21 @@ const InCall = () => {
               ) : (
                 <MutedIcon type="simple" />
               )}
-              <ButtonText>{local?.audio ? "Mute" : "Unmute"}</ButtonText>
+              <ButtonText>{local?.audio ? "Заглушить" : "Убрать заглушку"}</ButtonText>
             </AudioButton>
           ) : (
             <HandButton onClick={handleHandRaising}>
               <ButtonText>
                 {local?.user_name.includes("✋")
-                  ? "Lower hand"
-                  : "Raise hand ✋"}
+                  ? "Опустить руку"
+                  : "Поднять руку ✋"}
               </ButtonText>
             </HandButton>
           )}
           {mods?.length < 2 && getAccountType(local?.user_name) === MOD ? (
-            <LeaveButton onClick={endCall}>End call</LeaveButton>
+            <LeaveButton onClick={endCall}>Закрыть комнату</LeaveButton>
           ) : (
-            <LeaveButton onClick={leaveCall}>Leave call</LeaveButton>
+            <LeaveButton onClick={leaveCall}>Выйти из комнаты</LeaveButton>
           )}
         </TrayContent>
       </Tray>
