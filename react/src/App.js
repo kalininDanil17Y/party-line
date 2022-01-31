@@ -17,20 +17,19 @@ const AppContent = () => {
       <Wrapper>
         <Header>
           <HeaderTop>
-            <Title>Party line</Title>
-            <Logo src={logo} className="App-logo" alt="logo" />
+            <Title>МоёПАТТИ</Title>
           </HeaderTop>
-          <SmallText>An audio API demo from Daily</SmallText>
+          <SmallText>DEMO</SmallText>
         </Header>
         {view === PREJOIN && <PreJoinRoom />}
         {view === INCALL && <InCall />}
         <Link
           center={view === INCALL}
-          href="https://docs.daily.co/guides/demos#party-line-a-multiplatform-audio-only-app"
+          href="https://vk.com/go.ro2005"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn more about this demo
+          Мой ВК
         </Link>
       </Wrapper>
     </AppContainer>
