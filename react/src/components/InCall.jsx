@@ -98,7 +98,7 @@ const InCall = () => {
         <Counter />
       </CallHeader>
       {canSpeak}
-      <Header>Listeners</Header>
+      <Header>Слушашие</Header>
       {listeners}
       <CopyLinkBox room={room} />
       <Tray>
