@@ -9,7 +9,7 @@ const CopyLinkBox = ({ room }) => {
       <InviteContainer>
         <Header>Invite others</Header>
         <SubHeader>
-          Copy and share join code with others to invite them. Code:{" "}
+          Скопируйте и поделитесь кодом присоединения с другими, чтобы пригласить их. Код: {" "}
           <Bold>{room?.name}</Bold>
         </SubHeader>
         <CopyButton
