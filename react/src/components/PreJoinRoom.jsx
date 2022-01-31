@@ -61,7 +61,7 @@ const PreJoinRoom = () => {
     <Container>
       <Title>Getting started</Title>
       <Form onSubmit={submitForm}>
-        <Label htmlFor="fname">First name</Label>
+        <Label htmlFor="fname">Имя</Label>
         <Input
           ref={firstNameRef}
           type="text"
@@ -69,9 +69,9 @@ const PreJoinRoom = () => {
           name="fname"
           required
         />
-        <Label htmlFor="lname">Last name</Label>
+        <Label htmlFor="lname">Фамилия</Label>
         <Input ref={lastNameRef} type="text" id="lname" name="lname" />
-        <Label htmlFor="room">Join code</Label>
+        <Label htmlFor="room">Код комнаты</Label>
         <Input
           ref={roomNameRef}
           type="text"
@@ -87,10 +87,10 @@ const PreJoinRoom = () => {
           type="submit"
           value={
             submitting
-              ? "Joining..."
+              ? "Вход..."
               : roomName?.trim()
-              ? "Join room"
-              : "Create and join room"
+              ? "Войти в комнату"
+              : "Создать комнату"
           }
         />
         {error && <ErrorText>Error: {error.toString()}</ErrorText>}
