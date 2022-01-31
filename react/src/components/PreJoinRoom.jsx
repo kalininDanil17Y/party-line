@@ -80,8 +80,7 @@ const PreJoinRoom = () => {
           onChange={handleRoomChange}
         />
         <SmallText>
-          Enter code to join an existing room, or leave empty to create a new
-          room.
+          Введите код, чтобы присоединиться к существующей комнате, или оставьте поле пустым, чтобы создать новую.
         </SmallText>
         <Submit
           type="submit"
