@@ -33,7 +33,8 @@ export const CallProvider = ({ children }) => {
       // CHANGE THIS TO YOUR NETLIFY URL
       // EX: https://myapp.netlify.app/.netlify/functions/room
       `${
-        process.env.REACT_APP_NETLIFY_URL || "https://partyline.daily.co"
+        //process.env.REACT_APP_NETLIFY_URL || "https://partyline.daily.co"
+        "https://inspiring-liskov-c93d0a.netlify.app/"
       }/.netlify/functions/room`,
       {
         method: "POST",
@@ -52,7 +53,8 @@ export const CallProvider = ({ children }) => {
       // CHANGE THIS TO YOUR NETLIFY URL
       // EX: https://myapp.netlify.app/.netlify/functions/token
       `${
-        process.env.REACT_APP_NETLIFY_URL || "https://partyline.daily.co"
+        //process.env.REACT_APP_NETLIFY_URL || "https://partyline.daily.co"
+        "https://inspiring-liskov-c93d0a.netlify.app/.netlify/functions/token"
       }/.netlify/functions/token`,
       {
         method: "POST",
@@ -103,7 +105,8 @@ export const CallProvider = ({ children }) => {
         // CHANGE THIS TO YOUR DAILY DOMAIN
         // EX: https://myaccount.daily.co/${roomInfo?.name}
         url: `${
-          process.env.REACT_APP_DAILY_DOMAIN || "https://devrel.daily.co"
+          //process.env.REACT_APP_DAILY_DOMAIN || "https://devrel.daily.co"
+          "https://danilo9.daily.co/"
         }/${roomInfo?.name}`,
         userName,
       };
