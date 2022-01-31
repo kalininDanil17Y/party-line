@@ -23,7 +23,7 @@ const Counter = () => {
       const value = Math.floor(secs / 60) + ":" + ("0" + (secs % 60)).slice(-2);
       if (secs <= 0) {
         clearInterval(interval.current);
-        console.log("Eep! Room has expired");
+        console.log("Ой! У конматы кончалось время");
         leaveCall();
         return;
       }
@@ -37,7 +37,7 @@ const Counter = () => {
 
   return (
     <Container>
-      Demo ends in <Count>{counter}</Count>
+      До конца: <Count>{counter}</Count>
     </Container>
   );
 };
